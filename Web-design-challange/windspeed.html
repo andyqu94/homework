@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude Analysis</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Creates the Overall Grid --> 
+<div class = "navigation">
+    <nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+        </div>
+    
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="data.html" class = 'navbar header'>Data</a></li>
+          <li><a href="comparison.html" class = 'navbar header'>Comparison</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="temperature.html">Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+
+
+
+<div class = 'container'>
+        <div class="row">
+          <div class="col-md-8">
+            <div class ="box">
+              <h1 class = "title">Windspeed</h1>
+              <hr>
+              <img src="Fig4.png"  alt="Max Temperature Graph">
+              <p><h2>no real correlation.</h2></p>
+            </div>
+          </div> 
+          
+          <div class = "col-md-4">
+              <div class ="box">
+                <h3 class = "title">Visulization</h3>
+                <hr>
+                <div class="container">
+                    <div class="row" style="padding-bottom: 30px;">
+                      <div class="col-6">
+                        <a href="temperature.html">
+                          <img src="Fig1.png" alt="Max Temperature Image">
+                        </a>
+                      </div>
+          
+                      <div class="col-6">
+                        <a href="humidity.html">
+                          <img src="Fig2.png" alt="Humidity Graph">
+                        </a>
+                      </div>
+                    </div>
+          
+          
+          
+                    <div class="row" style="padding-bottom: 30px;">
+                      <div class="col-6">
+                        <a href="cloudiness.html">
+                          <img src="Fig3.png" alt="Cloudiness Graph">
+                        </a>
+                      </div>
+          
+                      <div class="col-6">
+                        <a href="windspeed.html">
+                          <img src="Fig4.png" alt="Wind Speed Graph">
+                        </a>
+                      </div>
+              </div>
+            </div>
+        </div>
+      
+      
+  
+<footer>
+  <div class="footer">Copyright Coding Bootcamp 2019</div>
+</footer>
+
+</body>
+
+</html>

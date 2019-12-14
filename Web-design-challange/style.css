@@ -1,0 +1,55 @@
+.navigation .navbar .navbar-brand {
+color : black;
+margin-left: 30px;
+font-weight: bold;
+padding: 15px;
+background-color:#0BADA6
+}
+
+p{
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+}
+
+img{
+width:100%;
+height:100;
+}
+
+.vizualization{
+width:50%;
+height:50%;
+}
+
+.title{
+color: white; 
+font-family: Georgia, 'Tahoma', Times, serif;
+font-weight: bolder;
+padding-top: 25px;
+}
+
+.box {
+margin-top: 60px;
+margin-bottom: 62px;
+padding: 10px 20px 15px;
+color:black;
+background-color: rgb(173, 230, 187);
+}
+
+footer{
+background-color: #666666;
+border-top-style: solid;
+border-top-width: 5px;
+border-top-color: white;
+color: white;
+min-height: 55px;
+font-family: Arial, Tahoma, sans-serif;
+font-size: 15px;
+text-align: center;
+position: fixed;
+left:0;
+bottom:0;   
+width: 100%;
+padding-top: 15px;
+}
