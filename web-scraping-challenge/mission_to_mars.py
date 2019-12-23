@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-import pandas as pd
 from bs4 import BeautifulSoup as bs
 from splinter import Browser
-import requests
-import numpy
-
-
-# In[2]:
+import pandas as pd
+import datetime as dt
 
 
 def init_browser():
@@ -23,8 +16,8 @@ def mars_news(browser):
     url = "https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest"
     browser.visit(url)
     soup = bs(browser.html, 'html.parser')
-    news_title = soup.find("div", class_="content_title").get_text()
-    news_p =soup.find("div", class_ ="article_teaser_body").get_text()
+    news_title = soup.find("div", class_="content_title").text
+    news_p =soup.find("div", class_ ="article_teaser_body").text
     return news_title,news_p
 
 def featured_image(browser):
@@ -48,14 +41,15 @@ def mars_weather(browser):
     browser.visit(mars_weather_url)
     html = browser.html
     weather_soup = bs(html, "html.parser")
-    mars_weather = weather_soup.find("p", "tweet-text").get_text()
+    mars_weather_info = weather_soup.find("p", "tweet-text").get_text()
     return mars_weather_info
 
 
 # # Mars Facts
 
 def mars_facts():
-    mars_fact_url="https://space-facts.com/mars/"
+    mars_fact_url = "https://space-facts.com/mars/"
+    df = pd.read_html(mars_fact_url)[0]
     df.columns=["description", "value"]
     return df.to_html(classes="table table-striped")
 
